@@ -28,6 +28,5 @@ function countDown () {
   })
 }
 
-// mutate the page only if Trump has taken office
 var now = new Date()
 if (now - inaugOn >= 0) countUp(); else countDown()

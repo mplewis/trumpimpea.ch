@@ -1,7 +1,7 @@
 /* eslint-env jquery */
 
 // Jan 20, 2017, 12:00 PM EST
-var inaugOn = new Date('2017-01-20T12:00:00.00-0900')
+var inaugOn = new Date('2017-01-20T10:00:00-07:00')
 var preInaug = 'Trump will be sworn into office in'
 var postInaug = [
   'Trump has been in office for',

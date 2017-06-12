@@ -8,19 +8,20 @@ body, html {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5em;
-  font-weight: 500;
-}
-
-h2 {
+h1, h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 2.5em;
   font-weight: 400;
 }
 
-h1, h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+h1 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 60px;
 }
 
 .container {

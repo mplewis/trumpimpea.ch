@@ -4,16 +4,8 @@
 var inaugOn = new Date('2017-01-20T12:00:00.00-0900')
 
 function updateCount () {
-  const diff = (new Date() - inaugOn) / 1000
-  const secs = parseInt(diff % 60)
-  const mins = parseInt((diff / 60) % 60)
-  const hours = parseInt((diff / 60 / 60) % 24)
-  const days = parseInt(diff / 60 / 60 / 24)
-  const ss = secs === 1 ? '' : 's'
-  const ms = mins === 1 ? '' : 's'
-  const hs = hours === 1 ? '' : 's'
-  const ds = days === 1 ? '' : 's'
-  const msg = `${days} day${ds}, ${hours} hour${hs}, ${mins} minute${ms}, and ${secs} second${ss}`
+  const since = moment.duration(new Date() - inaugOn)
+  const msg = since.format('d [days], h [hours], m [minutes], [and] s [seconds]')
   document.querySelector('.clock').innerText = msg
 }
 
